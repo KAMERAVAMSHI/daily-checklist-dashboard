@@ -7,17 +7,15 @@ Life Score System with 6 Dimensions.
 import datetime
 import xlsxwriter
 
-from constants.app_constants import (
+from app.const import (
     OUTFILE_HORIZONTAL, DAYS_IN_YEAR, START_DATE,
-    DASHBOARD_TITLE, DASHBOARD_SUBTITLE
-)
-from constants.task_constants import (
+    DASHBOARD_TITLE, DASHBOARD_SUBTITLE,
     TASKS, WAKE_OPTIONS, CALORIE_OPTIONS, WATER_OPTIONS, PROTEIN_OPTIONS,
     FEEL_OPTIONS, SLEEP_OPTIONS, DEEPWORK_OPTIONS, STEPS_OPTIONS,
-    NEGATIVE_HABIT_TASKS, CATEGORY_WEIGHTS
+    NEGATIVE_HABIT_TASKS, CATEGORY_WEIGHTS,
+    OKRS, OKR_INSTRUCTIONS
 )
-from constants.okr_constants import OKRS, OKR_INSTRUCTIONS
-import constants.style_constants as styles
+import app.const as styles
 
 workbook = xlsxwriter.Workbook(OUTFILE_HORIZONTAL)
 

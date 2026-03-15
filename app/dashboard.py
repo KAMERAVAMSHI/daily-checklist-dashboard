@@ -10,12 +10,12 @@ import plotly.graph_objects as go
 import datetime
 import random
 
-from constants.app_constants import OUTFILE_HORIZONTAL, GOOGLE_SHEETS_URL
-from constants.task_constants import (
+from app.const import OUTFILE_HORIZONTAL, GOOGLE_SHEETS_URL
+from app.const import (
     CATEGORIES_MAP, CATEGORY_WEIGHTS, CATEGORY_EMOJIS,
     NEGATIVE_HABIT_TASKS, TASKS
 )
-from constants.okr_constants import OKRS
+from app.const import OKRS
 
 # ── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(
