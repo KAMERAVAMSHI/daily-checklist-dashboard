@@ -3,6 +3,12 @@ KV Life OS — Premium Streamlit Dashboard
 A world-class life management analytics system.
 """
 
+import os
+import sys
+
+# Add the project root to the Python path for Streamlit Cloud
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
