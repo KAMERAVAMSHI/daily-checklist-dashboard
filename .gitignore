@@ -24,3 +24,11 @@ venv.bak/
 # OS
 .DS_Store
 Thumbs.db
+# Additional required by tutorial
+*.pyc
+.env
+.venv
+venv/
+*.log
+.ipynb_checkpoints
+.streamlit/secrets.toml
